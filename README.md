@@ -19,6 +19,6 @@
 
 编辑 `content.js` 中的项目：`title` 标题、`description` 简介、`category` 为 cfd 或 cad、`tool` 软件名称、`tags` 标签、`sections` 项目详情。将图片存入 `assets/`，设置 `image: './assets/文件名.webp'`。真实项目补充完成后将 `sample` 改为 false，并修改 index.html 中的示例说明。示意图仅用于版式演示，不能替代真实仿真结果。
 
-个人介绍和 GitHub 联系链接位于 `index.html`。配色与响应式样式位于 `style.css`。
+个人介绍和 GitHub 联系链接位于 `index.html`。配色与响应式样式位于 `exhibition.css`。
 
 建议每个项目包含：背景与目标、本人负责内容、建模过程、求解/设计方法、验证、真实结果与局限。不要上传不允许公开的模型和资料。
