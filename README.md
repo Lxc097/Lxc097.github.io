@@ -9,11 +9,11 @@
 ## 发布到 GitHub Pages
 
 1. 在 Lxc097 账号新建公开仓库 `Lxc097.github.io`（若已有该仓库，先检查已有内容）。
-2. 将本项目文件提交到 `main` 分支，保留 `.github/workflows/pages.yml` 和 `.nojekyll`。
-3. 仓库 Settings → Pages → Build and deployment → Source 选择 GitHub Actions。
-4. 在 Actions 中运行 Deploy portfolio to GitHub Pages，等待成功后访问 https://lxc097.github.io/ 。
+2. 将本项目文件提交到 `main` 分支，保留 `.nojekyll`。
+3. 仓库 Settings → Pages → Build and deployment → Source 选择 Deploy from a branch，分支选择 main，目录选择 / (root)，保存。
+4. 等待 GitHub 自动部署成功后访问 https://lxc097.github.io/ 。
 
-官方说明：https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages
+官方说明：https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
 
 ## 更新真实作品
 
