@@ -1,0 +1,24 @@
+# LiXinchen 工程作品集
+
+原生 HTML / CSS / JavaScript，无需安装依赖或构建。为 GitHub Pages 配置，所有资源使用相对路径，同时兼容个人域名和项目子路径。
+
+## 本地预览
+
+在本目录运行 `python -m http.server 8080`，打开 http://localhost:8080 。
+
+## 发布到 GitHub Pages
+
+1. 在 Lxc097 账号新建公开仓库 `Lxc097.github.io`（若已有该仓库，先检查已有内容）。
+2. 将本项目文件提交到 `main` 分支，保留 `.github/workflows/pages.yml` 和 `.nojekyll`。
+3. 仓库 Settings → Pages → Build and deployment → Source 选择 GitHub Actions。
+4. 在 Actions 中运行 Deploy portfolio to GitHub Pages，等待成功后访问 https://lxc097.github.io/ 。
+
+官方说明：https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages
+
+## 更新真实作品
+
+编辑 `content.js` 中的项目：`title` 标题、`description` 简介、`category` 为 cfd 或 cad、`tool` 软件名称、`tags` 标签、`sections` 项目详情。将图片存入 `assets/`，设置 `image: './assets/文件名.webp'`。真实项目补充完成后将 `sample` 改为 false，并修改 index.html 中的示例说明。示意图仅用于版式演示，不能替代真实仿真结果。
+
+个人介绍和 GitHub 联系链接位于 `index.html`。配色与响应式样式位于 `style.css`。
+
+建议每个项目包含：背景与目标、本人负责内容、建模过程、求解/设计方法、验证、真实结果与局限。不要上传不允许公开的模型和资料。
