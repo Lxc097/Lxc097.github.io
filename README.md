@@ -4,7 +4,7 @@
 
 ## 本地预览
 
-在本目录运行 `python -m http.server 8080`，打开 http://localhost:8080 。
+在本目录运行 `python -m http.server 8080`（没有 `python` 时用 `python3`），打开 http://localhost:8080 。
 
 ## 发布到 GitHub Pages
 
@@ -22,3 +22,11 @@
 个人介绍和 GitHub 联系链接位于 `index.html`。配色与响应式样式位于 `exhibition.css`。
 
 建议每个项目包含：背景与目标、本人负责内容、建模过程、求解/设计方法、验证、真实结果与局限。不要上传不允许公开的模型和资料。
+
+## 变更记录
+
+- 删除未再引用的 `style.css`。页面只链接 `exhibition.css`，两份文件内容相同。
+- 增加 `.gitignore`，忽略系统与编辑器临时文件。
+- 修正 304px 及更窄时导航中文被拆成单字、或贴住品牌的问题：链接不换行，导航放到品牌下一行。
+- 「管道内流」的卡片和详情会写出同一个 SVG 渐变 id。现在每次绘制使用不同 id。
+- 增加站点图标，避免浏览器请求 `/favicon.ico` 时出现 404。
